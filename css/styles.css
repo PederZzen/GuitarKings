@@ -25,6 +25,10 @@ nav li {
   display: inline-block;
 }
 
+nav li a {
+  padding: 10px;
+}
+
 header,
 footer {
   background-color: #202020;
@@ -44,6 +48,16 @@ header a {
 .cta {
   background-color: #bb0000;
   color: #ffffff;
+  padding: 10px 80px;
+  border-radius: 3px;
+}
+
+.cta-small {
+  padding: 5px 30px;
+}
+
+.cta-sale {
+  background-color: #127300;
 }
 
 .active {
@@ -56,10 +70,6 @@ header a {
 
 .featured--products {
   background-color: #fbfbfb;
-}
-
-.cta-sale {
-  background-color: #127300;
 }
 
 footer {
