@@ -12,9 +12,22 @@ h2,
 .logo {
   font-family: "Boots And Spurs";
 }
+.logo {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
 
 .product-list h2 {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  margin-left: 25px;
 }
 
 nav ul {
@@ -84,15 +97,61 @@ footer {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
-  min-height: 70vh;
+  position: relative;
+  min-height: 95vh;
+}
+
+#welcome-content {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  text-align: center;
+}
+
+.selling-points {
+  margin: 50px auto;
+}
+
+.selling-points,
+.reviews-content {
+  display: flex;
+  max-width: 1000px;
+}
+
+.selling-points > *,
+.reviews-content > * {
+  flex: 1;
 }
 
 .selling-points_images {
   border-radius: 100px;
+  width: 100%;
+}
+
+.reviews {
+  text-align: center;
+  padding: 50px;
+}
+
+.reviews-content {
+  text-align: left;
+  line-height: 150%;
+  margin: auto;
+}
+
+.reviews-content div {
+  margin: 50px;
+}
+
+.reviews-name {
+  display: block;
+  font-weight: bold;
 }
 
 .review_images {
   border-radius: 50%;
+  width: 80px;
+  float: right;
 }
 
 /* Contact Page */
@@ -102,4 +161,9 @@ select,
 textarea {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+}
+
+/* Product Specific Page */
+
+.product {
 }
