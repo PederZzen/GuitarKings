@@ -82,8 +82,22 @@ header a {
   background-color: #e8e8e8;
 }
 
-.featured--products {
+.products {
   background-color: #fbfbfb;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.products img {
+  grid-column: -1/1;
+}
+
+.products h2,
+.products h3,
+.products p {
+  grid-column: 1;
+  font-size: 0.9em;
+  margin: 5px;
 }
 
 footer {
@@ -155,6 +169,22 @@ footer {
   float: right;
 }
 
+.featured {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 50px auto;
+  grid-gap: 10px;
+}
+
+.featured img {
+  width: 100%;
+}
+
+.featured h2 {
+  grid-column: -1/1;
+}
+
 /* Contact Page */
 
 input,
@@ -222,3 +252,5 @@ textarea {
   display: flex;
   gap: 5px;
 }
+
+/* Guitars page */
